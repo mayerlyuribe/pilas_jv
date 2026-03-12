@@ -10,8 +10,9 @@ public class pilaStack {
             String number = String.valueOf(aleatorio);
             pilaNumbers1.push(number);
         }
-        System.out.println("\n" + pilaNumbers1.toString());
-        System.out.println("------------------------");
+        System.out.println("\nPila 1 con 7 numeritos aleatorios:");
+        System.out.println(pilaNumbers1.toString());
+        System.out.println("--------------------------------------------------");
 
         Stack<String> pilaNumbers2 = new Stack<>();
 
@@ -19,8 +20,9 @@ public class pilaStack {
             pilaNumbers2.push(pilaNumbers1.peek());
             pilaNumbers1.pop();
         }
+        System.out.println("Pila 2 con los datos de la pila 1 en orden inverso:");
         System.out.println(pilaNumbers2.toString());
-        System.out.println("------------------------");
+        System.out.println("---------------------------------------------------");
 
 
     }
